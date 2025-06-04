@@ -1,8 +1,8 @@
 # Marabou Neural Network Verification – Iris MLP Example
 
-본 프로젝트는 [Marabou](https://github.com/NeuralNetworkVerification/Marabou)를 활용해 PyTorch로 학습한 Iris 분류 MLP 모델의 **정확도**, **강인성(Robustness)**, **안전성(Safety)**, **공정성(Fairness)**을 자동 검증하는 실습 예제입니다.
+본 프로젝트는 [Marabou](https://github.com/NeuralNetworkVerification/Marabou)를 활용해 PyTorch로 학습한 Iris 분류 MLP 모델의 **정확도**, **강인성(Robustness)**, **안전성(Safety)**, **공정성(Fairness)** 을 자동 검증하는 실습 예제입니다.
 
----
+--- 
 
 ## 구성 파일
 
