@@ -22,14 +22,43 @@ pip install -r requirements.txt
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/adversarial-attacks.git
-cd assignment3
+# Conda 가상환경 생성
+conda create -n marabou python=3.8 -y
+conda activate marabou
+
+# MarabouPy 설치
+pip install maraboupy
+
+# Marabou 소스 클론 및 빌드 폴더 생성
+git clone https://github.com/NeuralNetworkVerification/Marabou.git
+cd Marabou/
+mkdir build
+cd build
 ```
 
 ### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 3. cmake installation
+```bash
+cd ~
+mkdir -p local/cmake && cd local
+wget https://github.com/Kitware/CMake/releases/download/v3.31.7/cmake-3.31.7.tar.gz
+tar -xzf cmake-3.31.7.tar.gz
+cd cmake-3.31.7
+# ./bootstrap --prefix=$HOME/local/cmake-install
+# make -j$(nproc)
+# make install
+
+./bootstrap --prefix=$HOME/local/cmake-install -- -DCMAKE_USE_OPENSSL=OFF
+make -j$(nproc)
+make install
+
+# 설치 확인
+cmake --version
 ```
 
 ---
