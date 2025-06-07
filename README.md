@@ -91,7 +91,7 @@ python iris_simple.py
 
 ### 3. test Marabou_iris
 ```bash
-python maraboupy/marabou_iris_test.py
+python maraboupy/iris_test.py
 ```
 
 ## 📊 Results 
